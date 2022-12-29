@@ -53,28 +53,28 @@ Hal pertama yang akan kita lakukan adalah menampilkan 5 data teratas yang ada pa
 ### Info Data dari Setiap Kolom
 Setelah berhasil menampilkan 5 data teratas yang ada pada table movie (movie_df), hal selanjutnya yang akan kita lakukan adalah melakukan pengecekan **tipe data dan informasi lainnya dari setiap kolom** yang ada pada **table movie** (movie_df) tersebut.
 
-![image](gambar2.png)
+![image](gambarr2.png)
 
 ### Pengecekan Data dengan Nilai NULL
 Merupakan suatu hal yang wajib untuk melakukan pengecekan terhadap nilai NULL yang ada di dalam dataset saat melakukan cleaning.
 
 Oleh karena itu, hal selanjutnya yang akan kita lakukan adalah melakukan pengecekan apakah ada **data bernilai NULL pada masing-masing kolom yang ada pada table movie (movie_df)**.
 
-![image](gambar3.png)
+![image](gambarr3.png)
 
 ### Analisis Kolom dengan data bernilai NULL - part 1
 Dari hasil pengecekan nilai NULL yang sudah dilakukan sebelumnya, diketahui bahwa kolom **primaryTitle** dan **originalTitle** memiliki banyak data yang bernilai NULL.
 
 Hal selanjutnya yang akan kita lakukan adalah melakukan pengecekan terhadap **bentuk data dari kolom primaryTitle dan originalTitle yang bernilai NULL, apakah salah satu atau kedua kolom yang dimaksud ada data yang bernilai NULL.**
 
-![image](gambar4.png)
+![image](gambarr4.png)
 
 ### Membuang Data dengan Nilai NULL - part 1
 Setelah melihat hasil sebelumnya, dapat dilihat bahwa semua data tidak memiliki judul dan kita dapat membuang data-data tersebut.
 
 Pekerjaan selanjutnya yang akan kita lakukan adalah membuang data dengan nilai NULL tersebut dan melihat jumlah data yang ada setelah data-data bernilai NULL tersebut dibuang. 
 
-![image](gambar5.png)
+![image](gambarr5.png)
 
 ### Analisis Kolom dengan data bernilai NULL - part 2
 Selain kolom 'primaryTitle' dan 'originalTitle',masih terdapat kolom lain yang memiliki data bernilai NULL. Kolom tersebut adalah kolom 'genres'
@@ -83,12 +83,12 @@ Selanjutnya, kita akan melakukan hal yang sama seperti yang sudah kita lakukan p
 
 Lakukan pengecekan terhadap **bentuk data dari kolom genres yang bernilai NULL.**
 
-![image](gambar6.png)
+![image](gambarr6.png)
 
 ### Membuang Data dengan Nilai NULL - part 2
 Setelah melihat hasil sebelumnya, dapat dilihat bahwa semua data tidak memiliki judul dan kita dapat membuang data-data tersebut.Pekerjaan selanjutnya yang akan kita lakukan adalah membuang data dengan nilai NULL tersebut dan melihat jumlah data yang ada setelah data-data bernilai NULL tersebut dibuang. 
 
-![image](gambar7.png)
+![image](gambarr7.png)
 
 ### Mengubah Nilai '\\N'
 Jika kita perhatikan pada kolom 'startYear' , 'endYear', dan 'runtimeMinutes', terdapat data dengan nilai '\\N'
@@ -97,11 +97,11 @@ Jika kita perhatikan pada kolom 'startYear' , 'endYear', dan 'runtimeMinutes', t
 
 Hal selanjutnya yang akan kita lakukan adalah mengubah nilai dari \\\N tersebur menjadi np.nan dan melakukan casting kolom startYear, endYear, dan runtimeMinutes menjadi float64.
 
-![image](gambar8.png)
+![image](gambarr8.png)
 
-![image](gambar9.png)
+![image](gambarr9.png)
 
-![image](gambar10.png)
+![image](gambarr10.png)
 
 ### Mengubah nilai genres menjadi list
 
@@ -110,19 +110,19 @@ Selanjutnya, kita akan membuat sebuah function yang bernama **transform_to_list*
 ### Menampilkan 5 data teratas
 Seperti yang sudah kita lakukan pada table movie (movie_df) sebelumnya, sekarang kita akan menampilkan 5 data teratas dari table ratings (rating_df)
 
-![image](gambar11.png)
+![image](gambarr11.png)
 
 ### Menampilkan info data
 Selanjutnya, kita akan menampilkan tipe data dan informasi lainnya dari masing-masing kolom yang ada pada table rating (rating_df)
 
-![image](gambar12.png)
+![image](gambarr12.png)
 
 ### Inner Join table movie dan table rating
 Mari kita melakukan **inner** join antara rating_df dan movie_df untuk mendapatkan rating pada setiap film yang tersedia, lalu tampilkan **5 data teratas** dan **tipe data** dari tiap kolom yang ada. 
 
-![image](gambar13.png)
+![image](gambarr13.png)
 
-![image](gambar14.png)
+![image](gambarr14.png)
 
 ### Memperkecil ukuran Table
 Hal selanjutnya yang akan kita lakukan adalah memperkecil ukuran table dengan menghilangkan semua nilai NULL dari kolom **startYear** dan **runtimeMinutes** karena tidak masuk akal jikalau film tersebut tidak diketahui kapan tahun rilis dan durasi nya. 
@@ -130,28 +130,28 @@ Hal selanjutnya yang akan kita lakukan adalah memperkecil ukuran table dengan me
 ### Pertanyaan 1: Berapa nilai C?
 Hal pertama yang akan kita cari adalah nilai dari C yang merupakan rata-rata dari averageRating
 
-![image](gambar15.png)
+![image](gambarr15.png)
 
 ### Pertanyaan 2: Berapa nilai m?
 Mari kita ambil contoh film dengan numVotes di atas 80% populasi, jadi populasi yang akan kita ambil hanya sebesar 20%.
 
-![image](gambar16.png)
+![image](gambarr16.png)
 
 ### Pertanyaan 3: Bagaimana cara membuat fungsi weighted formula?
 Selanjutnya kita harus membuat sebuah fungsi dengan menggunakan dataframe sebagai variable.
 
-![image](gambar17.png)
+![image](gambarr17.png)
 
-![image](gambar18.png)
+![image](gambarr18.png)
 
 ### Pertanyaan 4: Bagaimana cara membuat simple recommender system?
 Dari task yang sudah kita lakukan sebelumnya, telah terdapat field tambahan 'score'.
 
 Pertama kita akan filter numVotes yang lebih dari m kemudian diurutkan score dari tertinggi ke terendah untuk diambil nilai beberapa nilai teratas
 
-![image](gambar19.png)
+![image](gambarr19.png)
 
-![image](gambar20.png)
+![image](gambarr20.png)
 
 ### Pertanyaan 5: Bagaimana cara membuat simple recommender system dengan user preferences?
 Dari task yang sudah dilakukan sebelumnya, dapat dilihat sekarang daftar film telah diurutkan dari score tertinggi ke terendah.
@@ -163,4 +163,4 @@ Sistem rekomendasi ini masih bisa ditingkatkan dengan menambah filter spesifik t
 
 Pekerjaan selanjutnya yang akan kita lakukan adalah membuat function untuk melakukan filter berdasarkan isAdult, startYear, dan genres.
 
-![image](gambar21.png)
+![image](gambarr21.png)
