@@ -48,7 +48,7 @@ Akses dataset :
 ### 5 Data teratas dari table movie
 Hal pertama yang akan kita lakukan adalah menampilkan 5 data teratas yang ada pada table movie (movie_df). 
 
-![gambarr1](gambarr1.png)
+![gambar1](gambarr1.png)
 
 ### Info Data dari Setiap Kolom
 Setelah berhasil menampilkan 5 data teratas yang ada pada table movie (movie_df), hal selanjutnya yang akan kita lakukan adalah melakukan pengecekan **tipe data dan informasi lainnya dari setiap kolom** yang ada pada **table movie** (movie_df) tersebut.
