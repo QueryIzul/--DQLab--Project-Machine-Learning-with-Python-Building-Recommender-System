@@ -58,7 +58,7 @@ Setelah berhasil menampilkan 5 data teratas yang ada pada table movie (movie_df)
 ### Pengecekan Data dengan Nilai NULL
 Merupakan suatu hal yang wajib untuk melakukan pengecekan terhadap nilai NULL yang ada di dalam dataset saat melakukan cleaning.
 
-Oleh karena itu, hal selanjutnya yang akan kita lakukan adalah melakukan pengecekan apakah ada **data bernilai NULL pada masing-masing kolom yang ada pada table movie (movie_df)**
+Oleh karena itu, hal selanjutnya yang akan kita lakukan adalah melakukan pengecekan apakah ada **data bernilai NULL pada masing-masing kolom yang ada pada table movie (movie_df)**.
 
 ![image](gambar3.png)
 
